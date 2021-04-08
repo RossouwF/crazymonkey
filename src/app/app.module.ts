@@ -15,6 +15,8 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { HeaderComponent } from './header/header/header.component';
 import { FooterComponent } from './footer/footer/footer.component';
 import { HomeComponent } from './content/home/home.component';
+import { NavFullscreenComponent } from './header/nav-fullscreen/nav-fullscreen.component';
+import { NavMobileComponent } from './header/nav-mobile/nav-mobile.component';
 
 registerLocaleData(en);
 
@@ -23,7 +25,9 @@ registerLocaleData(en);
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    NavFullscreenComponent,
+    NavMobileComponent
   ],
   imports: [
     BrowserModule,
