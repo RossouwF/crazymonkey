@@ -1,0 +1,34 @@
+@import 'style/style-utils.less';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'app-header'
+        'app-router'
+        'app-footer';
+    border: 1px solid black;
+    
+    .app-header {
+        grid-area: app-header;
+        border: 1px solid red;
+    }
+
+    .app-router {
+        grid-area: app-router;
+        // height: 90vh;
+        border: 1px solid green;
+    }
+    
+    .app-footer {
+        grid-area: app-footer;
+        border: 1px solid blue;
+    }
+
+}
