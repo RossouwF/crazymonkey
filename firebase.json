@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/crazymonkey",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
