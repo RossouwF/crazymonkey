@@ -11,8 +11,6 @@
     .home-services,
     .home-contact-us,
     .home-gallery {
-        padding: 12px;
-
         .heading {
             width: 100%;
             padding-bottom: 8px;
@@ -45,9 +43,11 @@
     }
 
     .home-why-us {
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
 
         .home-w-content {
             width: 1000px;
@@ -63,11 +63,12 @@
     }
 
     .home-services {
-        width: 100vw !important;
+        width: 100%;
         background-color: @gray;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        padding-top: 24px;
         padding-bottom: 24px;
 
         .home-s-lists {
@@ -87,7 +88,12 @@
     }
 
     .home-gallery {
+        width: 100%;
         // border: 1px solid firebrick;
+    }
+
+    .home-covid {
+        width: 100%;
     }
 
 }
