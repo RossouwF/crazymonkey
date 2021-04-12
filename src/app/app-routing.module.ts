@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './content/home/home.component';
+import { HomePageComponent } from './feature/home/home-page/home-page.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    component: HomeComponent
+    loadChildren: () => import('./feature/home/home-page/home-page.module').then(m => m.HomePageModule)
+  },
+  { 
+    path: 'gallery',
+    loadChildren: () => import('./feature/gallery/gallery/gallery.module').then(m => m.GalleryModule) 
   },
   {
     path: '',
-    component: HomeComponent
+    component: HomePageComponent
   },
   {
     path: '**',
-    component: HomeComponent
+    component: HomePageComponent
   },
 ];
 

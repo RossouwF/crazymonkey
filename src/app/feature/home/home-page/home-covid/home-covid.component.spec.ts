@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CovidBannerComponent } from './covid-banner.component';
+import { HomeCovidComponent } from './home-covid.component';
 
-describe('CovidBannerComponent', () => {
-  let component: CovidBannerComponent;
-  let fixture: ComponentFixture<CovidBannerComponent>;
+describe('HomeCovidComponent', () => {
+  let component: HomeCovidComponent;
+  let fixture: ComponentFixture<HomeCovidComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CovidBannerComponent ]
+      declarations: [ HomeCovidComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CovidBannerComponent);
+    fixture = TestBed.createComponent(HomeCovidComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

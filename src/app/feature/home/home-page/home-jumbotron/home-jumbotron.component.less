@@ -1,0 +1,43 @@
+@import '../../../../style/style-utils.less';
+
+.home-jumbotron {
+    width: 100%;
+    height: 400px;
+
+    p {
+        margin: 0;
+    }
+
+    .home-j-figure {
+        width: 100%;
+        height: 400px;
+    }
+
+    .home-j-text {
+        position: relative;
+        top: -270px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        p {
+            font-size: @font-size-xxl;
+            padding: 16px;
+            width: 300px;
+            background-color: rgba(255, 192, 0, 0.4);
+            color: @black;
+            text-align: center;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    .home-jumbotron .home-j-text p {
+        padding: 16px;
+        width: 400px;
+        font-size: @font-size-xxxl;
+    }
+
+}
