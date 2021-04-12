@@ -1,0 +1,51 @@
+@import '../../style/style-utils.less';
+
+div {
+}
+
+.footer {
+    margin-top: 24px;
+    margin-bottom: -20px;
+    padding: 12px;
+    background-color: @yellow-dark;
+    opacity: 1;
+    color: @gray-dark;
+
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .footer-container {
+            width: 300px;
+            padding-bottom: 12px;
+        }
+
+        .f-head {
+            font-size: @font-size-l;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .footer-disclaimer {
+            text-align: center;
+            width: 300px;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
+
+    .footer .footer-bottom .footer-disclaimer {
+        width: 500px;
+    }
+
+}
