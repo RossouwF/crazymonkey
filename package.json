@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
+    "@ant-design/icons-angular": "^11.0.1",
     "firebase": "^8.3.2",
     "firebase-tools": "^9.9.0",
     "ng-zorro-antd": "^11.4.0",
