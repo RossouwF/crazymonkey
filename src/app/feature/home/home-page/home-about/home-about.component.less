@@ -1,0 +1,51 @@
+@import '../../../../style/style-utils.less';
+
+.home-about {
+
+    .home-a-cards-l,
+    .home-a-cards-s,
+    .home-a-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .home-a-cards-l,
+    .home-a-cards-s {
+        padding: 20px;
+        nz-card {
+            margin: 20px;
+        }
+    }
+
+    .home-a-cards-s {
+        display: none;
+    }
+
+    .home-a-header {
+        div {
+            font-size: 28px;
+            text-align: center;
+            font-family: @font-main;
+            span {
+                font-family: @font-logo;
+                text-shadow: 2px 2px @silver;
+            }
+        }
+    }
+    
+
+}
+
+@media only screen and (max-width: 500px) {
+.home-about {
+
+    .home-a-cards-l {
+        display: none;
+    }
+
+    .home-a-cards-s {
+        display: flex;
+    }
+
+}}  

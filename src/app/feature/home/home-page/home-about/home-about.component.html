@@ -1,0 +1,26 @@
+<div class="home-about">
+
+    <div class="home-a-header">
+        <div>More About <span>Crazy Monkey Garage SA</span></div>
+    </div>
+
+    <div class="home-a-cards-l">
+        <ng-container *ngFor="let a of abouts">
+            <nz-card style="width:240px" [nzCover]="coverTemplate" class="shadow-around">
+                <nz-card-meta [nzTitle]="a.title" [nzDescription]="a.description"></nz-card-meta>
+            </nz-card>
+            <ng-template #coverTemplate class="thise">
+                <img alt="{{a.title}} image not found" src="../../../../../assets/about/{{a.image}}" />
+            </ng-template>
+        </ng-container>
+    </div>
+
+    <div class="home-a-cards-s">
+        <ng-container *ngFor="let a of abouts">
+            <nz-card style="width:240px" class="shadow-around">
+                <nz-card-meta [nzTitle]="a.title" [nzDescription]="a.description"></nz-card-meta>
+            </nz-card>
+        </ng-container>
+    </div>
+
+</div>

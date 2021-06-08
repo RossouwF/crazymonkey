@@ -11,6 +11,7 @@ import { HomeWhyUsComponent } from './home-why-us/home-why-us.component';
 import { HomeGalleryComponent } from './home-gallery/home-gallery.component';
 import { HomeContactUsComponent } from './home-contact-us/home-contact-us.component';
 import { HomeCovidComponent } from './home-covid/home-covid.component';
+import { HomeAboutComponent } from './home-about/home-about.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { HomeCovidComponent } from './home-covid/home-covid.component';
     HomeGalleryComponent,
     HomeContactUsComponent,
     HomeCovidComponent,
+    HomeAboutComponent,
   ],
   imports: [
     CommonModule,

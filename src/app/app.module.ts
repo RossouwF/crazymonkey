@@ -11,12 +11,18 @@ import { AppComponent } from './app.component';
 import { NZ_I18N } from 'ng-zorro-antd/i18n';
 import { en_US } from 'ng-zorro-antd/i18n';
 
+// Ant Design
 import { NzCardModule } from 'ng-zorro-antd/card';
+
+// Header
 import { HeaderComponent } from './shared/header/header.component';
+
+// Footer
 import { FooterComponent } from './shared/footer/footer.component';
 import { FooterContactUsComponent } from './shared/footer/footer-contact-us/footer-contact-us.component';
 import { FooterServicesComponent } from './shared/footer/footer-services/footer-services.component';
 import { FooterLinksComponent } from './shared/footer/footer-links/footer-links.component';
+
 
 registerLocaleData(en);
 
@@ -37,7 +43,6 @@ registerLocaleData(en);
     BrowserAnimationsModule,
 
     NzCardModule,
-    
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
