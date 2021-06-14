@@ -3,10 +3,25 @@
 .fgit-item {
     font-weight: 100;
     font-size: @font-size-m;
-    color: @gray-dark;
+    color: @black;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
 
     .fgiti-header {    
-        font-weight: 600;;
+        font-weight: 600;
+        padding-right: 5px;
+        flex-grow: 1;
+    }
+
+    .fgiti-text {
+        text-align: right;
+        flex-grow: 1;
     }
 
 }
+
+@media only screen and (max-width: 500px) {
+.fgit-item {
+    
+}}

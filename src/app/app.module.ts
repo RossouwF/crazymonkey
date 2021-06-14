@@ -22,8 +22,7 @@ import { HeaderComponent } from './shared/header/header.component';
 // Footer
 import { FooterComponent } from './shared/footer/footer.component';
 import { FooterContactUsComponent } from './shared/footer/footer-contact-us/footer-contact-us.component';
-import { FooterServicesComponent } from './shared/footer/footer-services/footer-services.component';
-import { FooterLinksComponent } from './shared/footer/footer-links/footer-links.component';
+import { FooterMapComponent } from './shared/footer/footer-map/footer-map.component';
 
 registerLocaleData(en);
 
@@ -33,8 +32,7 @@ registerLocaleData(en);
     HeaderComponent,
     FooterComponent,
     FooterContactUsComponent,
-    FooterServicesComponent,
-    FooterLinksComponent,
+    FooterMapComponent,
   ],
   imports: [
     BrowserModule,

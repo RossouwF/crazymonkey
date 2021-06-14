@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FooterLinksComponent } from './footer-links.component';
+import { FooterMapComponent } from './footer-map.component';
 
-describe('FooterLinksComponent', () => {
-  let component: FooterLinksComponent;
-  let fixture: ComponentFixture<FooterLinksComponent>;
+describe('FooterMapComponent', () => {
+  let component: FooterMapComponent;
+  let fixture: ComponentFixture<FooterMapComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FooterLinksComponent ]
+      declarations: [ FooterMapComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FooterLinksComponent);
+    fixture = TestBed.createComponent(FooterMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

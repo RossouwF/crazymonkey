@@ -1,13 +1,10 @@
 @import '../../style/style-utils.less';
 
-div {
-}
-
 .footer {
     margin-top: 24px;
     margin-bottom: -20px;
     padding: 12px;
-    background-color: @yellow-dark;
+    // background-color: @yellow-dark;
     opacity: 1;
     color: @gray-dark;
 
@@ -17,14 +14,25 @@ div {
         justify-content: center;
 
         .footer-container {
-            width: 300px;
-            padding-bottom: 12px;
+            width: 500px;
+            padding: 20px;
+            margin: 20px;
         }
 
         .f-head {
+            color: @black;
+            text-align: center;
             font-size: @font-size-l;
             font-weight: 600;
-            text-decoration: underline;
+            // text-decoration: underline;
+        }
+
+        .f-content {
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -32,20 +40,34 @@ div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        color: @black;
+        font-display: swap;
+        font-family: @font-main;
         
         .footer-disclaimer {
             text-align: center;
             width: 300px;
+
+            span {
+                font-display: swap;
+                font-family: @font-logo;
+                text-shadow: 2px 2px @silver;
+            }
+
         }
 
     }
 
 }
 
-@media only screen and (min-width: 700px) {
-
-    .footer .footer-bottom .footer-disclaimer {
-        width: 500px;
+@media only screen and (max-width: 500px) {
+.footer {
+    .footer-top .footer-container {
+        width: 300px;
+        margin: 5px;
     }
 
-}
+    .footer-bottom .footer-disclaimer {
+        width: 300px;
+    }
+}}
