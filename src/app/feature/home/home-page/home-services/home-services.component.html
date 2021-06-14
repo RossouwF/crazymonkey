@@ -1,29 +1,15 @@
 <div class="home-services">
 
-    <p class="heading heading-center">Services We Offer</p>
-
-    <div class="home-s-lists">
-        <p>Auto Electrical</p>
-        <p>Brakes</p>
-        <p>Conversions</p>
-        <p>Diagnostics</p>
-        <p>Diff Repairs</p>
-        <p>Engine Overhauls</p>
-        <p>Lift Kits</p>
-        <p>Major Services</p>
-        <p>Minor Services</p>
-        <p>Petrol Tanks (Steel) </p>
-        <p>Project Vehicles</p>
-        <p>Rebuilds</p>
-        <p>Replacement Bumper</p>
-        <p>Shocks</p>
-        <p>Suspension</p>
-        <p>Turbo Recons</p>
-        <p>Vehicle Body Improvements</p>
-        <p>Vehicle Body Work</p>
-        <p>Vehicle Improvements</p>
-        <p>Window Fitments</p>
-        <p><a class="link" href="services">View all our Services</a></p>
+    <div class="home-s-header">
+        <div>Services on Offer</div>
     </div>
-    
+
+    <div class="home-s-cards">
+        <ng-container *ngFor="let a of services">
+            <nz-card style="width:240px" class="shadow-around">
+                <nz-card-meta [nzTitle]="a.title" [nzDescription]="a.description"></nz-card-meta>
+            </nz-card>
+        </ng-container>
+    </div>
+
 </div>

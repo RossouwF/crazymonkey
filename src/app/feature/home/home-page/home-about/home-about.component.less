@@ -23,6 +23,7 @@
     }
 
     .home-a-header {
+        padding: 10px;
         div {
             font-size: 28px;
             text-align: center;
@@ -33,12 +34,35 @@
             }
         }
     }
-    
 
 }
 
+::ng-deep {
+    .ant-card-meta-title {
+        font-family: @font-main;
+    }
+
+    .ant-card-meta-description {
+        font-family: @font-second;
+    }
+}
+
+
 @media only screen and (max-width: 500px) {
 .home-about {
+    box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+
+    ::ng-deep {
+        .ant-card {
+            border: 1px solid transparent;
+            width: 200px !important;
+        }
+        .ant-card-body {
+            padding: 10px;
+        }
+    }
 
     .home-a-cards-l {
         display: none;
@@ -46,6 +70,16 @@
 
     .home-a-cards-s {
         display: flex;
+        justify-content: center;
+        nz-card {
+            margin: 10px;
+        }
+    }
+
+    .shadow-around {
+        box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
+        -webkit-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
+        -moz-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
     }
 
 }}  

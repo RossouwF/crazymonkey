@@ -1,0 +1,16 @@
+<div class="home-carousel">
+
+    <div class="home-c-header">
+        <div>Our {{title}}</div>
+    </div>
+
+    <nz-carousel nzAutoPlay [nzAutoPlaySpeed]="speed" class="shadow-around">
+        <div nz-carousel-content *ngFor="let index of array">
+            <picture class="home-c-picture">
+                <img src="../../../../../assets/images/home-jumbotron-l.jpg" alt="Bicanski Image loading">
+                <figcaption>Photo by <a class="link-external" href="https://pixnio.com/media/gear-machinery-mechanic-mechanical-mechanism"> Bicanski</a> on <a href="https://pixnio.com/">Pixnio</a></figcaption>
+            </picture>
+        </div>
+    </nz-carousel>
+
+</div>

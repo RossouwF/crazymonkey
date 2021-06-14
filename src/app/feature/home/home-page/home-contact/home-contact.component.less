@@ -1,0 +1,71 @@
+@import '../../../../style/style-utils.less';
+
+.home-contact {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+    .home-c-container {
+        width: 500px;
+        margin: 20px;
+
+        .home-c-header,
+        .home-c-content {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .home-c-header {
+            div {
+                font-size: 28px;
+                text-align: center;
+                font-family: @font-main;
+            }
+        }
+
+        .home-c-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .home-cc-row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .home-cc-row-head,
+                .home-cc-row-text {
+                    margin-right: 10px;
+                    font-size: @font-size-l;
+                }
+
+                .home-cc-row-head {
+                    font-size: @font-size-xxl;
+                    text-align: center;
+                    font-weight: 600;
+                    font-family: @font-second;
+                }
+
+                .home-cc-row-text {
+                    text-align: center;
+                    font-weight: 100;
+                    font-family: @font-second;
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+.home-contact {
+  .home-c-container {
+      width: 100%;
+  }  
+}}

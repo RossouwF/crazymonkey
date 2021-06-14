@@ -1,37 +1,77 @@
 @import '../../../../style/style-utils.less';
 
 .home-services {
-    width: 100%;
-    background-color: @gray;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 24px;
+    margin-bottom: 20px;
 
-    .home-s-lists {
+    .home-s-cards,
+    .home-s-header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-
-        p {
-            text-align: center;
-            margin: 0;
-            width: 300px;
-            font-size: @font-size-m;
-        }
-        
-    }
-
-}
-
-@media only screen and (min-width: 700px) {
-
-    .home-services .home-s-lists {
-        width: 1300px;
-        p {
-            font-size: @font-size-l;
-        }
     }
     
+    .home-s-cards {
+        max-width: 1600px;
+        padding: 20px;
+        nz-card {
+            margin: 20px;
+        }
+    }
+
+    .home-s-header {
+        padding: 10px;
+        width: 100%;
+        div {
+            font-size: 28px;
+            text-align: center;
+            font-family: @font-main;
+        }
+    }
+
 }
+
+::ng-deep {
+    .ant-card-meta-title {
+        font-family: @font-main;
+        font-size: @font-size-m;
+        text-align: center;
+    }
+
+    .ant-card-meta-description {
+        font-family: @font-second;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+.home-services {
+    box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0.5);
+
+    ::ng-deep {
+        .ant-card {
+            border: 1px solid transparent;
+            width: 200px !important;
+        }
+        .ant-card-body {
+            padding: 10px;
+        }
+    }
+
+    .home-s-cards {
+        width: 100%;
+        nz-card {   
+            margin: 0px;
+        } 
+    }
+
+    .shadow-around {
+        box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
+        -webkit-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
+        -moz-box-shadow: 1px 1px 40px 10px rgba(0,0,0,0);
+    }
+
+}}  

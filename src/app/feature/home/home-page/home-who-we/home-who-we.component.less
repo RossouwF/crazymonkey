@@ -1,0 +1,56 @@
+@import '../../../../style/style-utils.less';
+
+.home-ww {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+    .home-ww-photo,
+    .home-ww-text {
+        margin: 20px;
+    }
+
+    .home-ww-photo {
+        width: 400px;
+        img {
+            width: 100%;
+        }
+
+        figcaption {
+            background-color: @black;
+            color: @white;
+            padding: 5px;
+        }
+    }
+
+    .home-ww-text {
+        width: 800px;
+        div {
+            font-size: 28px;
+            text-align: center;
+            font-family: @font-main;
+            span {
+                font-family: @font-logo;
+                text-shadow: 2px 2px @silver;
+            }
+        }
+        p {
+            font-size: 18px;
+            font-family: @font-second;
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+.home-ww {
+    .home-ww-photo {
+        width: 80%;
+    }
+    .home-ww-text {
+        width: 80%;
+        text-align: center;
+    }
+}}  

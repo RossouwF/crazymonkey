@@ -1,8 +1,9 @@
-<!-- <app-home-jumbotron></app-home-jumbotron> -->
-<!-- <app-home-services></app-home-services> -->
-<!-- <app-home-why-us></app-home-why-us> -->
-<!-- <app-home-gallery></app-home-gallery> -->
-<!-- <app-home-contact-us></app-home-contact-us> -->
-<!-- <app-home-covid></app-home-covid> -->
-
+<app-home-covid></app-home-covid>
+<app-home-who-we></app-home-who-we>
+<app-home-services></app-home-services>
+<div class="home-container">
+    <app-home-carousel [title]="'Gallery'" [array]="gallery" [speed]='3000'></app-home-carousel>
+    <app-home-carousel [title]="'Specials'" [array]="specials" [speed]='5000'></app-home-carousel>
+</div>
 <app-home-about></app-home-about>
+<!-- <app-home-contact></app-home-contact> -->
